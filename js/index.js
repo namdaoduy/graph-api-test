@@ -9,5 +9,6 @@ function statusChangeCallback(r) {
         window.location = '../login.html';
     }
 }
-
-checkLoginState();
+window.onload = function() {
+    checkLoginState();
+}
