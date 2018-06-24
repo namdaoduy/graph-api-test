@@ -5,13 +5,14 @@ function checkLoginState() {
 }
 
 function statusChangeCallback(r) {
-    if (r.status != 'connected') {
-        window.location = '../login.html';
-    }
-    else {
+    if (r.status === 'connected') {
         window.location = '../';
     }
+    else {
+        
+    }
 }
+
 window.onload = function() {
     checkLoginState();
 }
